@@ -43,7 +43,7 @@ app.use(helmet());
 app.use(express.json({ limit: '10kb' }));
  
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'Public')));
  
 const contactLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
